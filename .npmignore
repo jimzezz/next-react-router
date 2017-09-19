@@ -1,0 +1,6 @@
+node_modules
+.eslintcache
+.next
+pages
+server.js
+routes.js

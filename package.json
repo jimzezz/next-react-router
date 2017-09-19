@@ -1,0 +1,57 @@
+{
+  "name": "next-react-router",
+  "version": "1.0.0",
+  "description": "Higher order component example",
+  "main": "dist/index.js",
+  "repository": "git@github.com:zachrbrown/next-react-router.git",
+  "author": "Zachary Brown <zeebz91@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "env": "^0.0.2",
+    "prop-types": "^15.5.10",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.0",
+    "eslint": "^4.7.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-flowtype": "^2.35.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "express": "^4.15.4",
+    "flow-bin": "^0.54.1",
+    "next": "^3.2.2",
+    "next-routes": "^1.0.40",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.2.2"
+  },
+  "peerDependencies": {
+    "next": "^3.2.2",
+    "react": "*",
+    "react-dom": "*",
+    "react-router-dom": "^4.2.2",
+    "next-routes": "^1.0.40"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "dev-build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "test": "eslint --cache src pages && flow check",
+    "dev": "NODE_ENV=dev node server.js",
+    "prepublish": "babel src -d dist"
+  }
+}
