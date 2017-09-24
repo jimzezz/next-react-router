@@ -17,6 +17,7 @@
     "prop-types": "^15.5.10",
     "url": "^0.11.0"
   },
+  "files": ["dist"],
   "devDependencies": {
     "babel-eslint": "^8.0.0",
     "eslint": "^4.7.0",
