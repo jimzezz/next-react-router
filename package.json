@@ -53,6 +53,6 @@
     "start": "NODE_ENV=production node server.js",
     "test": "eslint --cache src pages && flow check",
     "dev": "NODE_ENV=dev node server.js",
-    "prepublish": "babel src -d dist"
+    "prepublish": "npm run build"
   }
 }
