@@ -8,18 +8,18 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-flow": "^6.23.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "env": "^0.0.2",
     "prop-types": "^15.5.10",
     "url": "^0.11.0"
   },
   "files": ["dist"],
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "eslint": "^4.7.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-airbnb-base": "^12.0.0",
@@ -42,10 +42,10 @@
   },
   "peerDependencies": {
     "next": "^3.2.2",
+    "next-routes": "^1.0.40",
     "react": "*",
     "react-dom": "*",
-    "react-router-dom": "^4.2.2",
-    "next-routes": "^1.0.40"
+    "react-router-dom": "^4.2.2"
   },
   "scripts": {
     "build": "babel src -d dist",

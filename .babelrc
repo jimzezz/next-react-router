@@ -1,3 +1,4 @@
 {
-  "presets": ["react", "flow", "env", "stage-0", "next/babel"]
+  "presets": ["react", "flow", "env", "stage-0"],
+  "plugins": ["transform-runtime"]
 }
