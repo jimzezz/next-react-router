@@ -23,10 +23,10 @@ type Route = {
 type Context = {
   Routes: {
     routes: Array<Route>,
-    match: string => ?{
+    match: string => {
       params: Object,
       query: Object,
-      route: Route
+      route?: Route
     }
   },
   routerProps: {
@@ -39,7 +39,7 @@ function Link (props: Props, context: Context) {
   if (typeof to === 'string') {
     const toWithBase = context.routerProps.basename ? context.routerProps.basename + to : to
     const routeMatch = context.Routes.match(toWithBase)
-    if (routeMatch) {
+    if (routeMatch.route) {
       const urls = routeMatch.route.getUrls(routeMatch.params)
       to = {
         pathname: to,
