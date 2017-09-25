@@ -4,12 +4,15 @@ import React from 'react'
 import { Link as ReactRouterLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
+import { omitKeys } from './utils'
+
 type Props = {
   onClick?: Function,
   target?: string,
   replace?: boolean,
   to: string | Object,
-  innerRef?: string | Function
+  innerRef?: string | Function,
+  shallow: boolean
 }
 
 type Route = {
@@ -34,6 +37,8 @@ type Context = {
   }
 }
 
+const ownKeys = ['shallow']
+
 function Link (props: Props, context: Context) {
   let to = props.to
   if (typeof to === 'string') {
@@ -43,12 +48,16 @@ function Link (props: Props, context: Context) {
       const urls = routeMatch.route.getUrls(routeMatch.params)
       to = {
         pathname: to,
-        state: { url: urls.href, as: urls.as },
+        state: { url: urls.href, as: urls.as, options: { shallow: props.shallow } },
       }
     }
   }
 
-  return <ReactRouterLink {...props} to={to} />
+  return <ReactRouterLink {...omitKeys(ownKeys, props)} to={to} />
+}
+
+Link.defaultProps = {
+  shallow: true,
 }
 
 Link.contextTypes = {

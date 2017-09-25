@@ -5,6 +5,7 @@ import * as React from 'react'
 import { BrowserRouter, StaticRouter } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
+import { omitKeys } from './utils'
 import onPopStatePatch from './patch'
 
 type Props = {
@@ -14,15 +15,6 @@ type Props = {
 }
 
 const ownKeys = ['location', 'children', 'Routes']
-function omitKeys (keys: Array<string>, source: Object): Object {
-  const clone = { ...source }
-
-  keys.forEach((key) => {
-    delete clone[key]
-  })
-
-  return clone
-}
 
 class IsomorphicRouter extends React.Component<Props> {
   static childContextTypes = {
