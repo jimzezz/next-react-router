@@ -1,7 +1,8 @@
 {
   "name": "next-react-router",
-  "version": "1.0.0",
-  "description": "Higher order component example",
+  "version": "1.0.1",
+  "keywords": ["next.js", "nextjs", "next", "react router", "react"],
+  "description": "Connective tissue between Next.js and React Router",
   "main": "dist/index.js",
   "repository": "git@github.com:zachrbrown/next-react-router.git",
   "author": "Zachary Brown <zeebz91@gmail.com>",
