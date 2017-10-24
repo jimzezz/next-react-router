@@ -1,7 +1,13 @@
 {
   "name": "next-react-router",
   "version": "1.0.1",
-  "keywords": ["next.js", "nextjs", "next", "react router", "react"],
+  "keywords": [
+    "next.js",
+    "nextjs",
+    "next",
+    "react router",
+    "react"
+  ],
   "description": "Connective tissue between Next.js and React Router",
   "main": "dist/index.js",
   "repository": "git@github.com:zachrbrown/next-react-router.git",
@@ -12,7 +18,9 @@
     "prop-types": "^15.5.10",
     "url": "^0.11.0"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.0.0",
@@ -37,12 +45,12 @@
     "flow-bin": "^0.54.1",
     "next": "^3.2.2",
     "next-routes": "^1.0.40",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-router-dom": "^4.2.2"
   },
   "peerDependencies": {
-    "next": "^3.2.2",
+    "next": "^4.0.0",
     "next-routes": "^1.0.40",
     "react": "*",
     "react-dom": "*",
