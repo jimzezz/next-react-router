@@ -1,13 +1,7 @@
 {
   "name": "next-react-router",
-  "version": "1.0.1",
-  "keywords": [
-    "next.js",
-    "nextjs",
-    "next",
-    "react router",
-    "react"
-  ],
+  "version": "1.1.1",
+  "keywords": ["next.js", "nextjs", "next", "react router", "react"],
   "description": "Connective tissue between Next.js and React Router",
   "main": "dist/index.js",
   "repository": "git@github.com:zachrbrown/next-react-router.git",
@@ -18,9 +12,7 @@
     "prop-types": "^15.5.10",
     "url": "^0.11.0"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.0.0",
